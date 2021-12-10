@@ -223,7 +223,7 @@ def main():
                 prediction = predictor.predict(vect_tweet)
             
             #st.write(prediction)
-            text_input['sentiment'] = prediction
+            #text_input['sentiment'] = prediction
             final_result = get_keys(prediction, prediction_labels)
             st.success("Tweet classified as: \n{}".format(final_result))
 
